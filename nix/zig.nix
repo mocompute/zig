@@ -46,6 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
   ]);
 
   cmakeFlags = [
+    "-DZIG_VERSION=${release.version}"
     "-DZIG_TARGET_MCPU=baseline"
     "-DCMAKE_BUILD_TYPE=Release"
   ];
