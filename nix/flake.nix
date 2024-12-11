@@ -3,7 +3,7 @@
   description = "Flake for building Zig from source.";
 
   inputs = {
-    nixpkgs.url = "github:mocompute/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     flake-utils.url = "github:numtide/flake-utils";
   };
 

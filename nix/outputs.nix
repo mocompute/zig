@@ -7,6 +7,7 @@ rec {
 
   devShell = pkgs.mkShell {
     nativeBuildInputs = zig.nativeBuildInputs ++ (with pkgs; [
+      bashInteractive
       ninja
     ]);
 
