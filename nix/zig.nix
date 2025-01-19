@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
   ];
 
   buildInputs = [
-    # libgcc.lib # work around https://github.com/ziglang/zig/issues/18612 (libstdc++.so not found in rpath)
+    libgcc.lib # work around https://github.com/ziglang/zig/issues/18612 (libstdc++.so not found in rpath)
     libxml2
     zlib
   ] ++ (with llvmPackages; [
